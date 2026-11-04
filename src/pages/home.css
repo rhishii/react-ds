@@ -1,8 +1,7 @@
 .netflix{
- background-color: #000000;
- height:100vh;
+ background-color: rgb(0, 0, 0);
+ height:300vh;
  display: flex;
-
  font-family: "Raleway", sans-serif;
 }
 .sidebar{
@@ -13,19 +12,28 @@
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    /* background: #131313; */
+    position: fixed;
+    background: #060606
+    /* margin-right: 10px; */
+
 }
+
 .home-main{
     display: block;
-    width: 95%;
+    width: 94%;
+    width: calc(100%-70%);
     padding-left: 20px;
+    margin-left: 60px;
+}
+.sidebar :hover{
+    background-color: #eb0808;
 }
 .hero{
     display: flex;
     flex-direction: column;
     gap: 14px;
     padding-top: 120px;
-    color: white;
+    color: rgb(3, 3, 3);
     background: linear-gradient(to top right, rgba(0,0,0,1.0),rgba(0,0,0,0.1)) , url("../assets/aadu.jpg");
     background-size: cover;
     margin-bottom: 20px;
@@ -34,7 +42,7 @@
     margin: 0;
 }
 .hero img{
-    width: 400px;
+    width: 500px;
     margin-bottom: 30px;
 }
 .hero-button{
@@ -45,16 +53,16 @@
     margin-top: 20px;    
 }
 .playbutton{
-    background-color: red;
-    color: white;
-    border: none;
+    background-color:rgb(222, 5, 5);
+    color: rgb(0, 0, 0);
+    border:none;
     font-size: 20px;
     padding: 14px;
-    width: 130px;
+    width: 150px;
     border-radius: 25px;
 }
 .trailerbutton{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: #000000;
     border: none;
     border-radius: 25px;
@@ -62,19 +70,4 @@
     width: 200px;
     padding: 14px;
 }
-.list{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 25px;
-    gap: 20px;
-}
-.movies h1{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-.list img{
-    height: 250px;
-    width: 250px;
-}
+

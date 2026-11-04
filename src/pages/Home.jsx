@@ -4,14 +4,9 @@ import movieIcon from "../assets/film-slate.svg";
 import monitorIcon from "../assets/monitor.svg";
 import plusIcon from "../assets/plus.svg";
 import trendupIcon from "../assets/trend-up.svg";
-import aadTitle from "../assets/title.png";
-import churuli from "../assets/Churuli.jpeg"
-import pulimurugan from"../assets/pulimurugan.jpeg"
-import biju from"../assets/biju.gif"
-import suresh from "../assets/suresh.gif"
-import putturumees from"../assets/putturumees.jpg"
-
+import aadutitle from "../assets/title.png";
 import'./home.css';
+import MovieCard from "../components/MovieCard";
 
 function Home() {
   return (
@@ -26,24 +21,20 @@ function Home() {
     </div>
     <div className="home-main">
       <div className="hero">
-          <img src={aadTitle} alt="" />
+          <img src={aadutitle} alt="" />
           <p>Rating : 6/10</p>
-          <p>2M Streams</p>
+          <p>500K+ Streams</p>
           <div className="hero-button">
             <button className="playbutton">Play</button>
             <button className="trailerbutton">Watch Trailer</button>
           </div>
       </div>
-      <div className="movies">
-      <h1> New this week</h1>
-      <div className="list">
-        <img src={churuli} alt="" />
-        <img src={biju} alt="" />
-        <img src={pulimurugan} alt="" />
-        <img src={suresh} alt="" />
-        <img src={putturumees} alt="" />
-      </div>
-    </div>
+      <MovieCard Mtitle="Top five movies"/>
+      <MovieCard Mtitle="Trending Now" />
+      <MovieCard Mtitle="Made in india" />
+      <MovieCard Mtitle="Malayalam crime thrillers" />
+    
+
     </div>
     
   </div>
