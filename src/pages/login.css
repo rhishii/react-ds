@@ -46,8 +46,3 @@
 .loginname button:active{
     background-color: rgb(130, 2, 2);
 }
-.netflix-logo {
-  position: absolute;
-  color: red;
-  font-size: 30px;
-}

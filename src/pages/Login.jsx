@@ -5,9 +5,7 @@ function Login() {
   return (
     <>
     <div className='details'>
-      <div className="netflix-logo">
-        <h1>NETFLIX</h1>
-      </div>  
+        
       <div className="loginname">
         <h1>Sign In</h1>
         <input type="text" placeholder='Enter Email id' ></input>

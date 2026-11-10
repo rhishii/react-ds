@@ -1,5 +1,126 @@
-.movie-img{
-    height:700px;
-    display: flex;
-    width: 100%;
+.movie-card {
+  width: 100%;
+  min-height: 100vh;
+  background: #181818;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  font-family: "Raleway", sans-serif;
+  
 }
+
+.movie-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  background-position: center;
+}
+
+.movie-background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom,transparent,rgba(24, 24, 24, 0.4),#181818),url("../assets/pepe.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.movie-content {
+  position: relative;
+  padding: 100px ;
+}
+
+.movie-logo {
+  width: 520px;
+  max-height: 250px;
+  
+  object-position: left;
+  margin-top: 350px;
+}
+
+.movie-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 1px;
+  
+}
+
+.play-btn {
+  padding: 15px 30px;
+  border: none;
+  background: none;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  font-size: 18px;
+  margin-top: 150px;
+}
+
+.icon-btn {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  background: transparent;
+  color: white;
+  margin-top: 150px;
+}
+
+.icon-btn:hover {
+  background: #606306;
+  color: black;
+}
+
+
+
+.play-btn:hover {
+  background: #847777;
+}
+
+.movie-details {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 150px;
+}
+
+.movie-left {
+  width: 75%;
+  font-size: 16px;
+}
+
+.movie-right {
+  width: 35%;
+  font-size: 16px;
+  
+}
+
+.movie-year {
+  color: #fffefe;
+  font-size: 17px;
+}
+
+.movie-rating {
+  font-size: 15px;
+}
+
+.movie-left h3 {
+  font-size: 22px;
+  margin-top: 25px;
+}
+
+.movie-description {
+  font-size: 19px;
+  line-height: 2;
+  margin-top: 25px;
+}
+h2 {
+  color: rgb(108, 103, 103);
+}
+

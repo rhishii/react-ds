@@ -18,6 +18,7 @@ function MovieCard({Mtitle}) {
         <img src={tovino} alt="" />
         <img src={kondal} alt="" />
         <img src={love} alt="" />
+        <img src={mohini} alt=""/>
         <img src={churuli} alt="" />
         {/* <img src={biju} alt="" /> */}
         {/* <img src={pulimurugan} alt="" /> */}
